@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="sam App Automation Test Suite">
+
+	<listeners>
+		<listener class-name="com.sam.retryAnalyzer.RetryTransformer" />
+	</listeners>
+
+	<test thread-count="5" name="sam Automation Test Framework">
+		<classes>
+
+			<class name="com.sam.testcases.configTest" />
+			<class name="com.sam.testcases.Test_Page_One" />
+
+		</classes>
+	</test>
+</suite><!-- Suite -->
+
